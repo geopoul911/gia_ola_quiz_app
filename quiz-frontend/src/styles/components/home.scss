@@ -1,0 +1,84 @@
+#home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  background-image: url('../../quiz.jpg');
+  background-size: cover;
+  
+
+  section {
+    background-color: rgba(255, 255, 255, 0.849);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 100px;
+    max-height: 200px;
+  }
+  img {
+    width:50%;
+    height:50%;
+    opacity: 0.5;
+
+  }
+
+  h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 40px;
+    height: 50px;
+    font-family: "Arial Narrow", 
+
+  }
+
+  a.competed-quizzes-button {
+    background-color: steelblue;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    display: block;
+  }
+
+  .auth-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+
+  .auth-container .auth-buttons {
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 10px 0;
+    text-align: center;
+    width: 45%;
+    margin: 5px;
+  }
+
+  #login-button {
+    background-color: darkblue;
+  }
+
+  #register-button {
+    background-color: red;
+  }
+
+  #history-button {
+    background-color: #5a9cff;
+  }
+
+  #logout-button {
+    background-color: red;
+  }
+
+  .logout-button-container {
+    text-align: center;
+    margin: 10px;
+  }
+  .logout-button {
+    border: steelblue solid 1px;
+    border-radius: 5px;
+  }
+}

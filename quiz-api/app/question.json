@@ -1,0 +1,11 @@
+[
+{
+  "model": "quiz.question",
+  "pk": 1,
+  "fields": {
+    "quiz": 1,
+    "label": "Einstein's famous equation was?",
+    "order": 0
+  }
+}
+]

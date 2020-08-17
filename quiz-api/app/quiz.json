@@ -1,0 +1,24 @@
+[
+{
+  "model": "quiz.quiz",
+  "pk": 1,
+  "fields": {
+    "name": "Cricket Quiz 1",
+    "description": "quiz about cricket",
+    "slug": "cricket-quiz-1",
+    "roll_out": true,
+    "timestamp": "2020-08-14T03:06:31.107Z"
+  }
+},
+{
+  "model": "quiz.quiz",
+  "pk": 2,
+  "fields": {
+    "name": "Cricket Quiz 2",
+    "description": "quiz about cricket",
+    "slug": "cricket-quiz-2",
+    "roll_out": true,
+    "timestamp": "2020-08-14T03:06:31.107Z"
+  }
+}
+]

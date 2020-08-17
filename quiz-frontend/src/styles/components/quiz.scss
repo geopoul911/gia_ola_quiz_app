@@ -1,0 +1,78 @@
+.questions {
+  background-color: whitesmoke;
+  border-left: 5px solid lightsteelblue;
+  width: 80%;
+  margin: 50px auto 0 auto;
+  padding: 20px 20px;
+
+  .answers-container {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .answer {
+    background-color: lightsteelblue;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .answer-selected {
+    background-color: rgb(6, 189, 0);
+  }
+
+  .answer:hover {
+    background-color: rgb(6, 189, 0);
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto 10px auto;
+    padding: 20px;
+    width: 80%;
+  }
+
+  .button-container button {
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .button-container button:first-child {
+    background-color: darken(#5e9cff, 10%);
+    transition: 0.2s linear all
+  }
+
+  .button-container button:first-child:hover {
+    background-color: darken(#5e9cff, 20%);
+  }
+
+  .button-container button:nth-child(2) {
+    background-color: green;
+    transition: 0.2s linear all
+  }
+
+  .button-container button:nth-child(2):hover {
+    background-color: darken(green, 10%);
+  }
+
+  .button-container button:last-child {
+    background-color: #ff6761;
+    transition: 0.2s linear all
+  }
+
+  .button-container button:last-child:hover {
+    background-color: darken(#ff6761, 10%);
+  }
+
+}
+
+

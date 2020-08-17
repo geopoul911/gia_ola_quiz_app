@@ -1,0 +1,81 @@
+.quiz-summary {
+
+  h1 {
+    color: limegreen;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+  }
+
+  h2 {
+    color: steelblue;
+  }
+
+  h4 {
+    color: lighten(grey, 10%);
+  }
+
+  .stats {
+    background-color: whitesmoke;
+    max-width: 50%;
+    padding: 10px 20px 20px 20px;
+  }
+
+  .stats h4, .stats h2 {
+    text-align: center;
+  }
+
+  .stats .stat {
+    color: grey;
+    font-size: 20px;
+  }
+
+  section ul {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  section ul li {
+    display: inline-block;
+  }
+
+  section ul li a {
+    padding: 10px !important;
+  }
+
+  section ul li a:hover {
+    color: whitesmoke;
+  }
+
+  section ul li:first-child {
+    border: 1px solid steelblue;
+    margin-right: 10px;
+    transition: 0.3s linear all;
+  }
+
+  section ul li:first-child:hover {
+    background-color: steelblue;
+  }
+
+  section ul li:last-child {
+    border: 1px solid limegreen;
+    transition: 0.3s linear all;
+  }
+
+  section ul li:last-child:hover {
+    background-color: limegreen;
+  }
+
+  section ul li:last-child a {
+    color: limegreen;
+  }
+
+  section ul li:last-child a:hover {
+    color: whitesmoke;
+  }
+
+  .no-stats {
+    color: grey;
+    margin: 40px auto;
+  }
+}

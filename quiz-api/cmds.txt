@@ -1,0 +1,18 @@
+to build: docker-compose build
+to up: docker-compose up
+to down: docker-compose down
+data dump: docker-compose run --rm app sh -c "python manage.py  dumpdata quiz.answer --indent 2 > answer.json"
+load data: docker-compose run --rm app sh -c "python manage.py loaddata app/app/fixtures/quiz"
+create super user: docker-compose run app sh -c "python manage.py createsuperuser"
+
+# fix for permission error
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+
+# access database
+docker-compose run db bash
+psql -h db -U root -d postgres_db
+
+# to view containers
+docker ps

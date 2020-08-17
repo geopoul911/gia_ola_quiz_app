@@ -1,0 +1,14 @@
+[
+{
+  "model": "quiz.quiztaker",
+  "pk": 35,
+  "fields": {
+    "user": 1,
+    "quiz": 3,
+    "score": 0,
+    "completed": false,
+    "date_finished": null,
+    "timestamp": "2020-08-14T10:47:46.967Z"
+  }
+}
+]

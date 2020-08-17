@@ -1,0 +1,36 @@
+==pre-requisities==
+docker
+docker compose
+ 
+==backend==
+
+# dir : giaola/quiz-api
+
+sudo docker-compose up
+sudo docker-compose run --rm app sh -c "python manage.py makemigrations"
+sudo docker-compose run --rm app sh -c "python manage.py migrate"
+
+
+==load data==
+# Mechanism to populate the database with quizzes from the provided API
+python ./app/app/features/generate.py
+sudo docker-compose run --rm app sh -c "python manage.py loaddata app/fixtures/quiz"
+sudo docker-compose run --rm app sh -c "python manage.py loaddata app/fixtures/question"
+sudo docker-compose run --rm app sh -c "python manage.py loaddata app/fixtures/answer"
+
+
+==frontend==
+
+# dir : giaola/quiz-frontend
+
+
+npm i node-sass
+npm i react-scripts
+npm init
+npm start
+
+# Application server is listening to http://localhost:3000/
+# Enable both django and react application in order to deploy
+
+==tests==
+sudo docker-compose run --rm app sh -c "python3 manage.py test"
