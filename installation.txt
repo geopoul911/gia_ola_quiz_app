@@ -1,4 +1,5 @@
 ==pre-requisities==
+
 docker
 docker compose
  
@@ -12,6 +13,7 @@ sudo docker-compose run --rm app sh -c "python manage.py migrate"
 
 
 ==load data==
+
 # Mechanism to populate the database with quizzes from the provided API
 python ./app/app/features/generate.py
 sudo docker-compose run --rm app sh -c "python manage.py loaddata app/fixtures/quiz"
@@ -33,4 +35,5 @@ npm start
 # Enable both django and react application in order to deploy
 
 ==tests==
+
 sudo docker-compose run --rm app sh -c "python3 manage.py test"
